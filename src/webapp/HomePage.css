@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header / Barra de cima */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 40px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container img {
+    display: block;
+    width: 200px;
+    margin-right: 800px;
+}
+
+.logo-container2 img{
+    display: block;
+    width: 70px;
+    margin-right: 500px;
+}
+
+.navbar {
+    display: flex;
+    gap: 35px;
+    margin-right: 300px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333399;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+.gif-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gif-container .gif {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero-content h1 {
+    font-size: 80px; /* Tamanho maior para o título */
+    font-weight: bold; /* Deixa o título mais destacado */
+    color: #333399; /* Roxo azulado */
+    text-align: center; /* Centraliza o título */
+}
+
+.hero-content p {
+    font-size: 28px; /* Mantém o tamanho legível */
+    color: #333; /* Cor escura para leitura confortável */
+    text-align: center; /* Centraliza as linhas menores */
+    width: 80%; /* Define uma largura adequada */
+    margin: 0 auto; /* Mantém centralizado horizontalmente */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas para melhor leitura */
+    word-wrap: break-word; /* Quebra palavras muito longas */
+}
+
+
+.mission-content {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    background: none;
+    font-size: 1000px;
+    margin-top: 30px;
+}
+
+.mission-content h1 {
+    font-size: 5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333399;
+}
+
+.mission-content p {
+    margin-top: 30px;
+}
+
+.description-content {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 50px; /* Espaçamento entre os elementos */
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+
+
+.description-content p {
+    background: #E6E6FA; /* Lilás suave (roxo azulado claro) */
+    font-size: 20px; /* Mantém o tamanho legível */
+    color: #333; /* Cor escura para leitura confortável */
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens ao centro */
+    max-width: 400px;
+    background: #E6E6FA; /* Lilás suave (roxo azulado claro) */
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px; /* Ajuste fino para centralizar */
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-top: 8px solid #ffcc00;
+    border-right: 8px solid #ffcc00;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #2;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.product-section {
+    background: #E6E6FA; /* Lilás suave (roxo azulado claro) */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o título horizontalmente */
+    text-align: center;
+    margin-top: 20px;
+    max-width: 2000px; /* Define uma largura máxima para a seção */
+    width: 100%; /* Faz com que ocupe 100% da largura disponível até o max-width */
+    margin-left: auto; /* Centraliza a seção horizontalmente */
+    margin-right: auto; /* Centraliza a seção horizontalmente */
+    padding: 0 50px; /* Espaçamento nas laterais, se necessário */
+    margin-top: 120px; /* Remove o espaçamento superior */
+
+}
+
+.product-section h1 {
+    font-size: 80px; /* Tamanho maior para o título */
+    font-weight: bold; /* Deixa o título mais destacado */
+    color: #333399; /* Roxo azulado */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+
+.product-content p {
+    color: black;
+    font-size: 25px;
+    max-width: 600px;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: px; /* Remove o espaçamento superior */
+    margin-left: 700;
+}
+
+.footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 60px; /* Espaço antes do footer */
+}
+
+.footer img {
+    height: 50px; /* Ajuste o tamanho do logotipo */
+    margin-right: 15px;
+}
+
+.footer-text {
+    font-size: 16px;
+    text-align: center;
+}
