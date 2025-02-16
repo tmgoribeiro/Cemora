@@ -21,18 +21,18 @@ body {
 }
 
 .logo-container img {
-    width: 120px;
+    width: 150px;
     margin-right: 20px;
 }
 
 .logo-container2 img {
-    width: 50px;
+    width: 60px;
     margin-right: 20px;
 }
 
 .navbar {
     display: flex;
-    gap: 20px;
+    gap: 35px;
     flex-wrap: wrap;
 }
 
@@ -41,7 +41,7 @@ body {
     color: #333399;
     font-weight: bold;
     transition: color 0.3s;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .gif-container {
@@ -67,14 +67,14 @@ body {
     flex-wrap: wrap;
 }
 .hero-content h1 {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: bold;
     color: #333399;
     text-align: center;
 }
 
 .hero-content p {
-    font-size: 3vw;
+    font-size: 2vw;
     color: #333;
     text-align: center;
     width: 90%;
@@ -94,7 +94,7 @@ body {
 
 .description-content p {
     background: #E6E6FA;
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
     padding: 15px;
     border-radius: 10px;
@@ -104,7 +104,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    max-width: 400px;
     background: #E6E6FA;
     margin: 10px;
     border-radius: 10px;
@@ -126,23 +126,23 @@ body {
     position: absolute;
     width: 80%;
     height: 80%;
-    border-top: 6px solid #ffcc00;
-    border-right: 6px solid #ffcc00;
+    border-top: 6px solid transparent;
+    border-right: 6px solid transparent;
     border-radius: 50%;
 }
 
 img {
-    width: 40px;
+    width: 50px;
     height: auto;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 0;
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
 }
 
@@ -186,23 +186,23 @@ p {
 }
 
 .footer img {
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
 }
 
 .footer-text {
-    font-size: 4vw;
+    font-size: 16px;
     text-align: center;
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .hero-content p {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .product-section h1 {
@@ -214,29 +214,29 @@ p {
     }
 
     .navbar {
-        gap: 10px;
+        gap: 15px;
     }
 
     .navbar a {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .footer-text {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
 @media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 10vw;
+        font-size: 7vw;
     }
 
     .hero-content p {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
-    .product-section h1 {
-        font-size: 7vw;
+    .product-section h1 {-
+        font-size: 6vw;
     }
 
     .product-content p {
@@ -245,7 +245,7 @@ p {
 
     .navbar {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         align-items: center;
     }
 
@@ -254,6 +254,6 @@ p {
     }
 
     .footer-text {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 }
