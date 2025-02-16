@@ -10,31 +10,30 @@ body {
 /* Header / Barra de cima */
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 40px;
+    padding: 20px;
     background: #fff;
     position: sticky;
     top: 0;
     z-index: 100;
+    flex-wrap: wrap;
 }
 
 .logo-container img {
-    display: block;
-    width: 150px;
-    margin-right: 400px;
+    width: 120px;
+    margin-right: 20px;
 }
 
-.logo-container2 img{
-    display: block;
-    width: 60px;
-    margin-right: 300px;
+.logo-container2 img {
+    width: 50px;
+    margin-right: 20px;
 }
 
 .navbar {
     display: flex;
-    gap: 35px;
-    margin-right: 300px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -42,7 +41,7 @@ body {
     color: #333399;
     font-weight: bold;
     transition: color 0.3s;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .gif-container {
@@ -60,88 +59,66 @@ body {
 
 /* Hero Section */
 .hero-section {
-    position: relative;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .hero-content h1 {
-    font-size: 80px; /* Tamanho maior para o título */
-    font-weight: bold; /* Deixa o título mais destacado */
-    color: #333399; /* Roxo azulado */
-    text-align: center; /* Centraliza o título */
+    font-size: 6vw;
+    font-weight: bold;
+    color: #333399;
+    text-align: center;
 }
 
 .hero-content p {
-    font-size: 28px; /* Mantém o tamanho legível */
-    color: #333; /* Cor escura para leitura confortável */
-    text-align: center; /* Centraliza as linhas menores */
-    width: 80%; /* Define uma largura adequada */
-    margin: 0 auto; /* Mantém centralizado horizontalmente */
-    line-height: 1.8; /* Aumenta o espaçamento entre as linhas para melhor leitura */
-    word-wrap: break-word; /* Quebra palavras muito longas */
-}
-
-
-.mission-content {
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: none;
-    background: none;
-    font-size: 1000px;
-    margin-top: 30px;
-}
-
-.mission-content h1 {
-    font-size: 5rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #333399;
-}
-
-.mission-content p {
-    margin-top: 30px;
+    font-size: 3vw;
+    color: #333;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.8;
+    word-wrap: break-word;
 }
 
 .description-content {
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 50px; /* Espaçamento entre os elementos */
+    justify-content: center;
+    gap: 30px;
     text-align: center;
-    margin-top: 100px;
-
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
-
-
 
 .description-content p {
-    background: #E6E6FA; /* Lilás suave (roxo azulado claro) */
-    font-size: 20px; /* Mantém o tamanho legível */
-    color: #333; /* Cor escura para leitura confortável */
+    background: #E6E6FA;
+    font-size: 18px;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
 }
-
 
 .item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha os itens ao centro */
-    max-width: 400px;
-    background: #E6E6FA; /* Lilás suave (roxo azulado claro) */
+    align-items: center;
+    max-width: 300px;
+    background: #E6E6FA;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 8px solid #ffcc00;
+    border: 6px solid #ffcc00;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    margin-top: 15px; /* Ajuste fino para centralizar */
+    margin-top: 15px;
 }
 
 .circle::before {
@@ -149,22 +126,19 @@ body {
     position: absolute;
     width: 80%;
     height: 80%;
-    border-top: 8px solid #ffcc00;
-    border-right: 8px solid #ffcc00;
+    border-top: 6px solid #ffcc00;
+    border-right: 6px solid #ffcc00;
     border-radius: 50%;
-    top: 0;
-    right: 0;
 }
 
 img {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
-    color: #2;
 }
 
 p {
@@ -172,60 +146,114 @@ p {
     color: #666;
 }
 
-
 .product-section {
-    background: #E6E6FA; /* Lilás suave (roxo azulado claro) */
-    position: relative;
+    background: #E6E6FA;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o título horizontalmente */
+    align-items: center;
     text-align: center;
     margin-top: 20px;
-    max-width: 2000px; /* Define uma largura máxima para a seção */
-    width: 100%; /* Faz com que ocupe 100% da largura disponível até o max-width */
-    margin-left: auto; /* Centraliza a seção horizontalmente */
-    margin-right: auto; /* Centraliza a seção horizontalmente */
-    padding: 0 50px; /* Espaçamento nas laterais, se necessário */
-    margin-top: 120px; /* Remove o espaçamento superior */
-
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .product-section h1 {
-    font-size: 80px; /* Tamanho maior para o título */
-    font-weight: bold; /* Deixa o título mais destacado */
-    color: #333399; /* Roxo azulado */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 5vw;
+    font-weight: bold;
+    color: #333399;
+    text-align: center;
+    margin-bottom: 20px;
 }
-
 
 .product-content p {
     color: black;
-    font-size: 25px;
-    max-width: 600px;
-    text-align: left; /* Alinha o texto à esquerda */
-    margin-top: px; /* Remove o espaçamento superior */
-    margin-left: 700;
+    font-size: 2.5vw;
+    max-width: 90%;
+    text-align: center;
 }
 
 .footer {
-    background-color: #333; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto branca */
+    background-color: #333;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 60px; /* Espaço antes do footer */
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .footer img {
-    height: 50px; /* Ajuste o tamanho do logotipo */
-    margin-right: 15px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .footer-text {
-    font-size: 16px;
+    font-size: 4vw;
     text-align: center;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 8vw;
+    }
+
+    .hero-content p {
+        font-size: 4vw;
+    }
+
+    .product-section h1 {
+        font-size: 6vw;
+    }
+
+    .product-content p {
+        font-size: 3vw;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 4vw;
+    }
+
+    .footer-text {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 10vw;
+    }
+
+    .hero-content p {
+        font-size: 5vw;
+    }
+
+    .product-section h1 {
+        font-size: 7vw;
+    }
+
+    .product-content p {
+        font-size: 4vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 5vw;
+    }
+
+    .footer-text {
+        font-size: 6vw;
+    }
 }
