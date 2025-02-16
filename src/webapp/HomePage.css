@@ -21,14 +21,14 @@ body {
 
 .logo-container img {
     display: block;
-    width: 200px;
-    margin-right: 800px;
+    width: 150px;
+    margin-right: 400px;
 }
 
 .logo-container2 img{
     display: block;
-    width: 70px;
-    margin-right: 500px;
+    width: 60px;
+    margin-right: 300px;
 }
 
 .navbar {
