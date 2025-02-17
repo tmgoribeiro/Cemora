@@ -1,80 +1,356 @@
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cemora</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cemora - 100% Waste-Based Cement Solutions</title>
+    <!-- FontAwesome for icons -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-p0CbxX1jZC6ybbnVQpZ8+OmXQ9OX8tDwA+N9odc5w+4gB8f3B0v6ZP5g7tYcLq3Tn42fSZe5IBSeQrQK5yjv8g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!-- SwiperJS CSS -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-<div class="header">
-    <div class="logo-container">
-        <img src="src/webapp/assets/cemora_logo2.png" alt="Cemora2">
-    </div>
-    <div class="logo-container2">
-        <img src="src/webapp/assets/cemora_logo.png" alt="Cemora">
-    </div>
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about-us">About us</a>
-        <a href="#contacts">Contacts</a>
-    </nav>
-</div>
-<div class="gif-container">
-    <img src="src/webapp/assets/BannerConceito1.gif" alt="Animação" class="gif">
-</div>
-
-<div class="hero-section">
-    <div class="hero-content">
-        <h1>Our Purpose</h1>
-        <p>Construction is the sector that produces the most waste in Portugal and, therefore, brings greater sustainability...</p>
-        <p>We have the solution! A greener, waste-derived cement that enhances durability and reduces environmental impact.<p>
-    </div>
-</div>
-
-<div class="description-section">
-    <div class="description-content">
-        <div class="item">
-            <div class="circle">
-                <img src="src/webapp/assets/pessoas.png" alt="pessoas">
+<!-- Header & Navigation -->
+<header>
+    <div class="container">
+        <nav>
+            <!-- Replace with your actual logo file path -->
+            <div class="logo">
+                <a href="#hero"><img src="webapp/assets/cemora_logo2.png" alt="Cemora Logo"></a>
             </div>
-            <h3>Who are we?</h3>
-            <p>We are a business group founded in Portugal with a sustainable presence in the cement industry.</p>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products-services">Products &amp; Services</a></li>
+                <li><a href="#impact-calculator">Impact Calculator</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section with Swiper Carousel -->
+<section id="hero">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?cement,production');">
+                <div class="slide-overlay">
+                    <h1>Building a Greener Future with 100% Waste-Based Cement</h1>
+                    <p>Transforming waste into eco‑friendly construction solutions for a circular economy.</p>
+                    <button class="cta-btn" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?sustainability,construction');">
+                <div class="slide-overlay">
+                    <h1>Innovative Waste Transformation</h1>
+                    <p>Reducing environmental impact by repurposing 100% waste into high‑performance cement.</p>
+                    <button class="cta-btn" onclick="document.getElementById('products-services').scrollIntoView({ behavior: 'smooth' });">
+                        Our Products
+                    </button>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/1600x900/?green,building');">
+                <div class="slide-overlay">
+                    <h1>Sustainable Construction Solutions</h1>
+                    <p>Driving the transition towards a circular economy in the cement industry.</p>
+                    <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Quick Facts Section -->
+<section id="quick-facts">
+    <div class="container">
+        <h2>Our Impact at a Glance</h2>
+        <div class="facts-grid">
+            <div class="fact-item">
+                <i class="fas fa-leaf"></i>
+                <h3>85% CO₂ Reduction</h3>
+                <p>Compared to conventional cement.</p>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-recycle"></i>
+                <h3>100% Waste-Based</h3>
+                <p>Transforming waste into value.</p>
+            </div>
+            <div class="fact-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Durability Tested</h3>
+                <p>Engineered for performance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-text">
+            <p>
+                At Cemora, we are committed to transforming <strong>100% waste</strong> into high‑performance, eco‑friendly cement solutions.
+                Our mission is to reduce environmental impact, promote sustainable construction practices, and lead the transition towards a circular economy in the industry.
+            </p>
+            <p>
+                Founded by a team of industry experts passionate about sustainability, our journey began with a simple idea: harness innovation to create lasting value for our communities and the environment.
+            </p>
         </div>
 
-        <div class="item">
-            <div class="circle">
-                <img src="src/webapp/assets/fabrica.png" alt="fabrica">
+        <!-- Our Team Section -->
+        <div id="our-team">
+            <h3>Our Team</h3>
+            <!-- Replace with your actual team image -->
+            <div class="team-photo">
+                <img src="webapp/assets/cemora_team.png" alt="Cemora Team" />
             </div>
-            <h3>Whats our work?</h3>
-            <p>We supply a greener, waste-derived cement that enhances durability and reduces environmental impact.</p>
+            <!-- Optionally list team roles below the image, if desired -->
+            <!--
+            <p style="margin-top:1rem;">
+              CEO: Chanda Mubanga<br />
+              CFO: Tiago Santos<br />
+              CTO: André Santos<br />
+              CCO: Clarisse Vilarinho<br />
+              ...
+            </p>
+            -->
         </div>
 
-        <div class="item">
-            <div class="circle">
-                <img src="src/webapp/assets/localizaçao.png" alt="localizaçao">
+        <!-- Sustainability Timeline -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>2018</h4>
+                <p>Company founded with a vision for sustainable cement production.</p>
             </div>
-            <h3>Where are we?</h3>
-            <p>Currently, only located in Portugal.</p>
+            <div class="timeline-item">
+                <h4>2019</h4>
+                <p>Developed proprietary waste transformation technology.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2020</h4>
+                <p>Launched our first eco‑friendly cement product.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2022</h4>
+                <p>Expanded licensing services to empower global partners.</p>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="product-section">
-    <div class="product-content">
-        <h1>Our Solution</h1>
-        <p>✔ 100% Waste-Derived Geopolymer Cement;</p>
-        <p>✔ Produces stronger concrete and durable mortars;<p>
-        <p>✔ Eliminates up to 85% of CO₂ emissions compared to traditional cement.<p>
+<!-- Products & Services Section -->
+<section id="products-services">
+    <div class="container">
+        <h2 class="section-title">Our Products &amp; Services</h2>
+        <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <h3>Eco‑Friendly Cement</h3>
+                <p>High‑performance cement produced by repurposing 100% waste materials.</p>
+                <p><strong>Specs:</strong> Low CO₂, high durability</p>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <h3>High‑Performance Cement</h3>
+                <p>Engineered for superior strength and longevity in construction.</p>
+                <p><strong>Specs:</strong> Advanced formulation, rigorous testing</p>
+            </div>
+            <!-- Product Card 3: Licensing -->
+            <div class="product-card">
+                <h3>Licensing</h3>
+                <p>Partner with us to bring sustainable cement production to your region.</p>
+                <p><strong>Specs:</strong> Turnkey solutions, technical support</p>
+            </div>
+        </div>
+        <!-- Comparison Chart -->
+        <div class="comparison-chart">
+            <table>
+                <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Cemora Cement</th>
+                    <th>Conventional Cement</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>CO₂ Emissions</td>
+                    <td>85% Lower</td>
+                    <td>Standard</td>
+                </tr>
+                <tr>
+                    <td>Waste Utilization</td>
+                    <td>100% Waste-Based</td>
+                    <td>Minimal</td>
+                </tr>
+                <tr>
+                    <td>Durability</td>
+                    <td>Enhanced</td>
+                    <td>Standard</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="footer">
-    <img src="src/webapp/assets/cemora_logo.png" alt="Logo1">
-    <div class="footer-text">
-        <p>© 2025 All rights reserved.</p>
-        <p>Cemora</p>
+<!-- Sustainability Impact Calculator -->
+<section id="impact-calculator">
+    <div class="container">
+        <h2 class="section-title">Sustainability Impact Calculator</h2>
+        <div class="calculator-container">
+            <p>Estimate your project’s carbon savings:</p>
+            <input type="number" id="projectSize" placeholder="Enter project size (in tons)" />
+            <button onclick="calculateImpact()">Calculate Savings</button>
+            <div class="calc-result" id="calcResult"></div>
+        </div>
     </div>
-</div>
+</section>
 
+<!-- Blog & News Section -->
+<section id="blog">
+    <div class="container">
+        <h2 class="section-title">Blog &amp; News</h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <img src="https://source.unsplash.com/600x400/?sustainability,cement" alt="Blog Post" />
+                <div class="blog-post-content">
+                    <h4>Innovations in Sustainable Construction</h4>
+                    <p>Discover the latest trends and insights on eco‑friendly building materials.</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://source.unsplash.com/600x400/?green,technology" alt="Blog Post" />
+                <div class="blog-post-content">
+                    <h4>How Waste is Transformed into Value</h4>
+                    <p>Learn about our breakthrough process for repurposing waste into cement.</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://source.unsplash.com/600x400/?construction,innovation" alt="Blog Post" />
+                <div class="blog-post-content">
+                    <h4>The Future of Licensing in Cement Production</h4>
+                    <p>Explore our licensing services and how we’re empowering global partners.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <select name="inquiry" required>
+                <option value="" disabled selected>Inquiry Type</option>
+                <option value="bulk">Bulk Orders</option>
+                <option value="partnerships">Partnerships</option>
+                <option value="general">General Inquiries</option>
+                <option value="licensing">Licensing</option>
+            </select>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="live-chat">
+            <button onclick="alert('Live Chat coming soon!')">Live Chat Now</button>
+        </div>
+        <!-- Interactive Map (Replace src with your location or API key if needed) -->
+        <div style="margin-top:2rem; text-align:center;">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0196589290845!2d-122.41941568468115!3d37.7749297797595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5d7d3bdf%3A0x6c9b9c2e21fbc7c5!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1616173027392!5m2!1sen!2sus"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Cemora. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<!-- SwiperJS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    /*Mobile Navigation Toggle*/
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    /* Initialize Swiper Carousel*/
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    /*Sustainability Impact Calculator Function*/
+    function calculateImpact() {
+      const size = document.getElementById('projectSize').value;
+      const resultEl = document.getElementById('calcResult');
+      if(size && size > 0) {
+        // For demonstration: assume each ton saves 150 kg of CO₂.
+        const savings = size * 150;
+        resultEl.textContent = `Estimated Carbon Savings: ${savings.toLocaleString()} kg CO₂`;
+      } else {
+        resultEl.textContent = 'Please enter a valid project size.';
+      }
+    }
+  </script>
 </body>
 </html>
