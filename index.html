@@ -307,22 +307,22 @@
     });
 
     /* Initialize Swiper Carousel*/
-    document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper('.swiper-container', {
       loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
+      slidesPerView: 1, // Garante que só um slide aparece de cada vez
+      spaceBetween: 10, // Espaço entre os slides
+    navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-    });
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000, // Muda de slide automaticamente a cada 5 segundos
+        disableOnInteraction: false, // Continua mesmo após interação
+    },
     });
 
     /*Sustainability Impact Calculator Function*/
