@@ -10,6 +10,19 @@
         color: #333;
         padding-top: calc(70px + 1rem); /* Igual à altura do header */
     }
+
+    html, body {
+         width: 100%;
+         overflow-x: hidden;
+     }
+     * {
+         max-width: 100%;
+     }
+
+    body {
+        min-width: 100vw;
+    }
+
     a {
       text-decoration: none;
       color: inherit;
@@ -44,6 +57,7 @@
     .nav-links {
       display: flex;
       align-items: center;
+      overflow-x: hidden;
     }
     .nav-links li {
       margin-left: 2rem;
